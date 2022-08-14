@@ -10,5 +10,5 @@ app.use('/',accountRoute)
 app.use('/',commandRoute)
 
 
-
-app.listen(3000,()=>console.log('server running on post 3000'))
+const PORT = process.env.PORT || 3000
+app.listen(PORT,()=>console.log('server running on post 3000'))
